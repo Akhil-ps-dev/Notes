@@ -13,7 +13,6 @@ class ScreenList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     DiarDB.instance.refresh();
-    final size = MediaQuery.of(context).size;
 
     return Scaffold(
         backgroundColor: const Color(0xffF2F3F7),
@@ -61,7 +60,7 @@ class ScreenList extends StatelessWidget {
                         ),
                       ]),
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                         ),
                         child: ListTile(
